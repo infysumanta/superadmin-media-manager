@@ -1,0 +1,31 @@
+{
+  "name": "sumantablog/superadmin-media-manager",
+  "description": "Media manager for laravel superadmin",
+  "type": "library",
+  "keywords": ["laravel-superadmin", "media", "manager"],
+  "homepage": "https://github.com/sumantablog/superadmin-media-manager",
+  "license": "MIT",
+  "authors": [{
+    "name": "Sumanta Kabiraj",
+    "email": "sumantablog@gmail.com"
+  }],
+  "require": {
+    "php": ">=7.0.0",
+    "sumantablog/laravel-superadmin": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sumantablog\\Admin\\Media\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sumantablog\\Admin\\Media\\MediaServiceProvider"
+      ]
+    }
+  }
+}
